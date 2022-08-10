@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate')%>
+    <div class="container mt-3 py-3">
+        <form action="/somewherespecial">
+            <div class="row text-center">
+                <div class="col mx-auto">
+                    <h1 class="">Contact us!</h1>
+                    <h3 class="">We would love to hear from you.</h2>
+                        <p class="lead">Fill out the form and and send us a message. We will respond as quickly as
+                            possible!
+                        </p>
+                </div>
+            </div>
+
+            <div class="col mb-3 d-flex align-items-end">
+                <div class="flex-grow-1 ms-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control mb-3" id="fullName" placeholder="what should we call you?"
+                        required>
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control mb-3" id="email" placeholder="youremail@example.com"
+                        required>
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                </div>
+                <div class="flex-shrink-0">
+                    <img class="img-fluid" src="images/playfulFox.svg" alt="image alternate text">
+                </div>
+            </div>
+            <div class="col mx-3 text-center">
+                <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+                <button type="submit" class="btn btn-lg btn-primary mb-3">send</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- todo: reset alignment of form fields, adjust placement of playfulFox.svg, wrap lead paragraph text, route the for submission to localDB, javascript input validations? -->
+
+    <!-- <button type="submit" class="btn btn-lg btn-primary">send</button>
+    
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    -->
